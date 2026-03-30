@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Whimsy Play</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Adobe Fonts kit (replace xxxxxxx with your kit ID) -->
+<link rel="stylesheet" href="https://use.typekit.net/dtp0oyo.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    .scroll-col {
+      display: flex;
+      flex-direction: column;
+      min-width: 260px;
+      flex: 1 1 0;
+      max-width: 320px;
+      margin: 0 16px;
+    }
+    .my-scrolling {
+      height: 180px;
+      overflow-y: auto;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .footer {
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button logo"><b>Whimsy</b>Play</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+        <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+
+      <a href="#search" class="w3-bar-item w3-button"><i class="fas fa-search"></i></a>
+      <a href="#cart" class="w3-bar-item w3-button"><i class="fas fa-shopping-cart"></i></a>
+      <a href="#menu" class="w3-bar-item w3-button"><i class="fas fa-bars"></i></a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Main Content with left/right margin -->
+<div style="margin-left: 20%; margin-right: 20%; flex: 1 0 auto;">
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-container w3-center w3-padding-16">Rock Painting Activity</h3>
+    <p class="w3-center">Ages 2 - 6 - About 10 minutes</p>
+  </div>
+
+  <!-- carousel slideshow begin -->
+  <div>
+    <img class="mySlides" src="./images/Children painting rocks on a table.png" style="width: 100%" />
+    <img class="mySlides" src="./images/Colorful rock painting session outdoors.png" style="width: 100%; display: none" />
+    <img class="mySlides" src="./images/Hand-painted family rocks on white background.png" style="width: 100%; display: none" />
+    <img class="mySlides" src="./images/Purple-rock-painting.png" style="width: 100%; display: none" />
+  </div>
+  <!-- carousel slideshow end -->
+
+  <!-- carousel thumbnails centered row -->
+  <div style="display: flex; justify-content: center; align-items: flex-start; margin: 40px auto; max-width: 1000px;">
+    <div class="w3-padding w3-sand" style="min-width: 260px; flex: 1 1 0; max-width: 320px; margin: 0 16px;">
+      <img
+        class="demo w3-opacity w3-hover-opacity-off"
+        src="./images/Children painting rocks on a table.png"
+        style="width: 100%; max-width: 140px; cursor: pointer; padding: 7px"
+        onclick="currentDiv(1)"
+      />
+    </div>
+    <div class="w3-padding w3-sand" style="min-width: 260px; flex: 1 1 0; max-width: 320px; margin: 0 16px;">
+      <img
+        class="demo w3-opacity w3-hover-opacity-off"
+        src="./images/Colorful rock painting session outdoors.png"
+        style="width: 100%; max-width: 140px; cursor: pointer; padding: 7px"
+        onclick="currentDiv(2)"
+      />
+    </div>
+    <div class="w3-padding w3-sand" style="min-width: 260px; flex: 1 1 0; max-width: 320px; margin: 0 16px;">
+      <img
+        class="demo w3-opacity w3-hover-opacity-off"
+        src="./images/Hand-painted family rocks on white background.png"
+        style="width: 100%; max-width: 140px; cursor: pointer; padding: 7px"
+        onclick="currentDiv(3)"
+      />
+    </div>
+    <div class="w3-padding w3-sand" style="min-width: 260px; flex: 1 1 0; max-width: 320px; margin: 0 16px;">
+      <img
+        class="demo w3-opacity w3-hover-opacity-off"
+        src="./images/Purple-rock-painting.png"
+        style="width: 100%; max-width: 140px; cursor: pointer; padding: 7px"
+        onclick="currentDiv(4)"
+      />
+    </div>
+  </div>
+  <!-- carousel thumbnail end -->
+
+  <!-- scrollable area begin -->
+  <div class="w3-row" style="display: flex; justify-content: center; margin-top: 40px;">
+    <!-- Column 1 -->
+    <div class="scroll-col w3-padding w3-sand">
+      <div class="w3-brown w3-center" style="margin-left: -16px; margin-right: -16px; margin-top: -18px;">
+        <h2>What you’ll need:</h2>
+      </div>
+      <div class="my-scrolling" style="padding-right: 10px">
+        <p>A few smooth stones</p>
+        <p>Some newspaper or a drop cloth to protect your work surface</p>
+        <p>Some markers or paint (we use acrylic)</p>
+        <p>Paintbrushes</p>
+        <p>A little imagination.</p>
+        <p>Directions:</p>
+        <p>Talk about their ideas of what they want to paint on the stone(s).</p>
+        <p>Assist your child in cleaning any dirt off the stone(s).</p>
+        <p>Let your child paint as desired. This is the fun part.</p>
+        <p>Let the one side of the rock dry and then turn it over and paint the other side.</p>
+        <p>Completely cover the rocks in paint.</p>
+        <p>Once they are dry, have your child write the name of the person they are gifting them to.</p>
+        <p>You can either leave them as is or spray them with a sealer if they are going to be outside.</p>
+        <p>Ta da! You are all done. Makes a great gift for Father’s or Mother’s Day.</p>
+      </div>
+    </div>
+    <!-- Column 2 -->
+    <div class="scroll-col w3-padding w3-sand">
+      <div class="w3-brown w3-center" style="margin-left: -16px; margin-right: -16px; margin-top: -18px;">
+        <h2>Tips for Success</h2>
+      </div>
+      <div class="my-scrolling" style="padding-right: 10px">
+        <p>Use washable paints for easy cleanup.</p>
+        <p>Let each layer dry before adding details.</p>
+        <p>Encourage creativity—there are no mistakes!</p>
+        <p>Seal finished rocks for outdoor use.</p>
+        <p>Display your creations proudly or gift them to friends.</p>
+      </div>
+    </div>
+    <!-- Column 3 -->
+    <div class="scroll-col w3-padding w3-sand">
+      <div class="w3-brown w3-center" style="margin-left: -16px; margin-right: -16px; margin-top: -18px;">
+        <h2>More Ideas</h2>
+      </div>
+      <div class="my-scrolling" style="padding-right: 10px">
+        <p>Paint animals, bugs, or favorite characters.</p>
+        <p>Write positive messages or jokes.</p>
+        <p>Make a set of story stones for storytelling.</p>
+        <p>Hide painted rocks in your neighborhood for others to find.</p>
+        <p>Use rocks as garden markers or paperweights.</p>
+      </div>
+    </div>
+  </div>
+  <!-- scrollable area end -->
+</div>
+
+<!-- Carousel JS (kept at end of body for best performance) -->
+<script>
+  var myIndex = 0;
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  carousel();
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {
+      myIndex = 1;
+    }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  function currentDiv(n) {
+    showDivs((slideIndex = n));
+    myIndex = n;
+  }
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = x.length;
+    }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+    }
+    x[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " w3-opacity-off";
+  }
+</script>
+
+
+ <!-- Footer -->
+<footer class="footer">
+
+  <!-- Organic SVG Wave -->
+  <div class="footer-wave">
+    <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+      <path d="M0,60 
+               C180,120 360,20 540,60 
+               C720,100 900,30 1080,70 
+               C1260,110 1440,50 1440,50 
+               L1440,0 L0,0 Z" 
+            fill="#f4f2ed">
+      </path>
+    </svg>
+  </div>
+
+  <!-- Content -->
+  <div class="footer-content">
+    
+    <div class="footer-column">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#">Activities</a></li>
+        <li><a href="#">Printables</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms and conditions</a></li>
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Stay Connected</h4>
+       <div class="social-icons">
+  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+</div>
+      <p>hello@whimsyplay.com</p>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    ©2026 Whimsy Play. All rights reserved.
+  </div>
+  <script>
+   // accordion begin
+      function myAccordion(id) {
+        var x = document.getElementById(id);
+        // if the accordion text is hidden, show it and change the button color to orange
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-brown", "w3-orange");
+        } else {
+          // if the accordion text is displayed, hide it and change the button color to brown
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-orange", "w3-brown");
+        }
+      }
+      // accordion end
+    </script>
+ </footer>
+</body>
+</html>
