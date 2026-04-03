@@ -1,315 +1,228 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Whimsy Play</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Adobe Fonts kit (replace xxxxxxx with your kit ID) -->
-<link rel="stylesheet" href="https://use.typekit.net/dtp0oyo.css">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Whimsy Play</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Adobe Fonts kit (replace xxxxxxx with your kit ID) -->
+  <link rel="stylesheet" href="https://use.typekit.net/dtp0oyo.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button logo"><b>Whimsy</b>Play</a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="./activities.html" class="w3-bar-item w3-button">Explore Playful Ideas</a>
-
-      <a href="#search" class="w3-bar-item w3-button"><i class="fas fa-search"></i></a>
-      <a href="#cart" class="w3-bar-item w3-button"><i class="fas fa-shopping-cart"></i></a>
-      <a href="#menu" class="w3-bar-item w3-button"><i class="fas fa-bars"></i></a>
-    </div>
-  </div>
-</div>
-<!-- Responsive horizontal navbar under header -->
-<nav class="w3-container w3-center" style="margin-top: 64px;">
-  <!-- Large screens: show all links -->
-  <div class="w3-hide-small w3-hide-medium" style="display: flex; justify-content: center;">
-    <a href="activities.html" class="w3-bar-item w3-button">Activities</a>
-    <a href="bilingual.html" class="w3-bar-item w3-button">Bilingual</a>
-    <a href="calming.html" class="w3-bar-item w3-button">Calming</a>
-    <a href="playguides.html" class="w3-bar-item w3-button">Playguides</a>
-  </div>
-  <!-- Small/medium screens: collapse to dropdown -->
-  <div class="w3-hide-large" style="display: flex; justify-content: center; align-items: center;">
-    <div class="w3-dropdown-hover">
-      <button class="w3-button">Activities <i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="activities.html" class="w3-bar-item w3-button">Activities</a>
-        <a href="bilingual.html" class="w3-bar-item w3-button">Bilingual</a>
-        <a href="calming.html" class="w3-bar-item w3-button">Calming</a>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="index.html" class="w3-bar-item w3-button logo"><b>Whimsy</b>Play</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="calming.html" class="w3-bar-item w3-button">Calming Activities</a>
+        <a href="bilingual.html" class="w3-bar-item w3-button">Bilingual Activities</a>
+        <a href="playguide.html" class="w3-bar-item w3-button">Play Guide</a>
+        <a href="#search" class="w3-bar-item w3-button"><i class="fas fa-search"></i></a>
+        <a href="#cart" class="w3-bar-item w3-button"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#menu" class="w3-bar-item w3-button"><i class="fas fa-bars"></i></a>
       </div>
     </div>
-    <a href="playguides.html" class="w3-bar-item w3-button">Playguides</a>
   </div>
-</nav>
 
-<!-- Page header and cards -->
-<div class="w3-container w3-center" style="margin-top:24px;">
-  <h1 style="margin: 0 0 8px;">Explore Playful Ideas</h1>
-  <p style="margin: 0 0 16px; color: #555;">Discover calming, creative, and bilingual activities for kids</p>
-</div>
+  <div style="max-width: 1024px; margin: 6rem auto 0; padding: 0 16px">
+    <!-- Page header and cards -->
+    <div class="w3-container w3-center" style="margin-top:24px;">
+      <h1 style="margin: 0 0 8px;">Explore Playful Ideas</h1>
+      <p style="margin: 0 0 16px; color: #555;">Discover calming, creative, and bilingual activities for kids</p>
+    </div>
 
+    <br />
 
-<br />
+    <div class="w3-row-padding" style="padding-top:0;">
+      <!-- (w3-top is fixed; top gap includes 64px navbar + 16px + 32px extra) -->
 
-<div class="w3-row-padding" style="padding-top:0;">
-<!-- (w3-top is fixed; top gap includes 64px navbar + 16px + 32px extra) --
+      <!-- step 1: add image files to img folder -->
+      <!--    each lightbox should have a thumbnail image and a larger image -->
+      <!-- step 2: add thumbnail image -->
+      <!-- step 3: add modal (background image and close button) -->
+      <!-- create first row to have 3 thumbnail images, 
+              each image takes up 4 columns out of the 12 columns grid,
+              we use classes w3-col s4 -->
+      <!-- first row of thumbnail images created below -->
+      <div class="w3-row-padding" style="margin: 15px 0px">
+        <!-- first thumbnail image created below -->
+        <div class="w3-col s4">
+          <img src="images/girl-coloring.webp" style="width: 100%; cursor: zoom-in"
+            onclick="document.getElementById('modal01').style.display='block'" class="w3-hover-shadow" />
+        </div>
+        <!-- second thumbnail image created below
+                we set 'modal02' in getElementById('modal02') -->
+        <div class="w3-col s4">
+          <img src="images/rock-painting.png" style="width: 100%; cursor: zoom-in"
+            onclick="document.getElementById('modal02').style.display='block'" class="w3-hover-shadow" />
+        </div>
+        <div class="w3-col s4">
+          <img src="images/girl reading.png" style="width: 100%; cursor: zoom-in"
+            onclick="document.getElementById('modal03').style.display='block'" class="w3-hover-shadow" />
+        </div>
 
-          <!-- step 1: add image files to img folder -->
-          <!--    each lightbox should have a thumbnail image and a larger image -->
-          <!-- step 2: add thumbnail image -->
-          <!-- step 3: add modal (background image and close button) -->
-          <!-- create first row to have 3 thumbnail images, 
-             each image takes up 4 columns out of the 12 columns grid,
-             we use classes w3-col s4 -->
-          <!-- first row of thumbnail images created below -->
-          <div class="w3-row-padding" style="margin: 15px 0px">
-            <!-- first thumbnail image created below -->
-            <div class="w3-col s4">
-              <img
-                src="./images/girl-coloring.webp"
-                style="width: 100%; cursor: zoom-in"
-                onclick="document.getElementById('modal01').style.display='block'"
-                class="w3-hover-shadow"
-              />
-            </div>
-            <!-- second thumbnail image created below
-               we set 'modal02' in getElementById('modal02') -->
-            <div class="w3-col s4">
-              <img
-                src="./images/rock-painting.png"
-                style="width: 100%; cursor: zoom-in"
-                onclick="document.getElementById('modal02').style.display='block'"
-                class="w3-hover-shadow"
-              />
-            </div>
-            <div class="w3-col s4">
-              <img
-                src="./images/girl reading.png"
-                style="width: 100%; cursor: zoom-in"
-                onclick="document.getElementById('modal03').style.display='block'"
-                class="w3-hover-shadow"
-              />
-            </div>
+      </div>
 
-          </div>
-
-          <!-- if needed, follow the samples above to create second row of thumbnail images here -->
-          <div class="w3-row-padding" style="margin: 15px 0px">
-            <!-- add code to create second row of thumbnail images here -->
-                  <div class="w3-col s4">
-              <img
-                src="./images/Yoga session with mom and daughter.png"
-                style="width: 100%; cursor: zoom-in"
-                onclick="document.getElementById('modal04').style.display='block'"
-                class="w3-hover-shadow"
-              />
-            </div>
-            <!-- second thumbnail image created below
-               we set 'modal02' in getElementById('modal02') -->
-            <div class="w3-col s4">
-              <img
-                src="./images/Autumn crafting with vibrant leaves.png"
-                style="width: 100%; cursor: zoom-in"
-                onclick="document.getElementById('modal05').style.display='block'"
-                class="w3-hover-shadow"
-              />
-            </div>
-            <div class="w3-col s4">
-              <img
-                src="./images/Toddler playing with colorful block.png"
-                style="width: 100%; cursor: zoom-in"
-                onclick="document.getElementById('modal06').style.display='block'"
-                class="w3-hover-shadow"
-              />
-            </div>
-          </div>
-
-          <!-- add the first modal, set id="modal01"-->
-          <!-- each lightbox content (modal) should have a unique modal id -->
-          <div
-            id="modal01"
-            class="w3-modal"
-            onclick="this.style.display='none'"
-          >
-            <!-- add close button-->
-            <span
-              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
-              style="cursor: pointer"
-              >&times;</span
-            >
-            <!-- add modal background image -->
-            <div class="w3-modal-content w3-animate-zoom">
-              <h4 class="w3-center">Calming Activity</h4>
-              <img src="./images/girl-coloring.webp" style="width: 100%" />
-            </div>
-          </div>
-
-          <!-- add the second modal, set id="modal02"-->
-          <!-- each lightbox content (modal) should have a unique modal id -->
-          <div
-            id="modal02"
-            class="w3-modal"
-            onclick="this.style.display='none'"
-          >
-            <!-- add close button-->
-            <span
-              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
-              style="cursor: pointer"
-              >&times;</span
-            >
-            <!-- add modal background image -->
-            <div class="w3-modal-content w3-animate-zoom">
-              <h4 class="w3-center">Creative Activity</h4>
-              <img src="./images/rock-painting.png" style="width: 100%" />
-            </div>
-          </div>
-
-           <div
-            id="modal03"
-            class="w3-modal"
-            onclick="this.style.display='none'"
-          >
-            <!-- add close button-->
-            <span
-              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
-              style="cursor: pointer"
-              >&times;</span
-            >
-            <!-- add modal background image -->
-            <div class="w3-modal-content w3-animate-zoom">
-              <h4 class="w3-center">Bilingual Activity</h4>
-              <img src="./images/girl reading.png" style="width: 100%" />
-            </div>
-          </div>
-           <div
-            id="modal04"
-            class="w3-modal"
-            onclick="this.style.display='none'"
-          >
-            <!-- add close button-->
-            <span
-              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
-              style="cursor: pointer"
-              >&times;</span
-            >
-            <!-- add modal background image -->
-            <div class="w3-modal-content w3-animate-zoom">
-              <h4 class="w3-center">Calming Activity</h4>
-              <img src="./images/Yoga session with mom and daughter.png" style="width: 100%" />
-            </div>
-          </div>
-           <div
-            id="modal05"
-            class="w3-modal"
-            onclick="this.style.display='none'"
-          >
-            <!-- add close button-->
-            <span
-              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
-              style="cursor: pointer"
-              >&times;</span
-            >
-            <!-- add modal background image -->
-            <div class="w3-modal-content w3-animate-zoom">
-              <h4 class="w3-center">Creative Activity</h4>
-              <img src="./images/Autumn crafting with vibrant leaves.png" style="width: 100%" />
-            </div>
-          </div>
-           <div
-            id="modal06"
-            class="w3-modal"
-            onclick="this.style.display='none'"
-          >
-            <!-- add close button-->
-            <span
-              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
-              style="cursor: pointer"
-              >&times;</span
-            >
-            <!-- add modal background image -->
-            <div class="w3-modal-content w3-animate-zoom">
-              <h4 class="w3-center">Bilingual Activity</h4>
-              <img src="./images/Toddler playing with colorful block.png" style="width: 100%" />
-            </div>
-          </div>
-
-          <!-- follow the samples above to continue adding modal for each thumbnail image -->
-          <!-- each lightbox content (modal) should have a unique modal id -->
-            <!-- add code to add modal for each thumbnail image -->
-          </div>
+      <!-- if needed, follow the samples above to create second row of thumbnail images here -->
+      <div class="w3-row-padding" style="margin: 15px 0px">
+        <!-- add code to create second row of thumbnail images here -->
+        <div class="w3-col s4">
+          <img src="images/Yoga session with mom and daughter.png" style="width: 100%; cursor: zoom-in"
+            onclick="document.getElementById('modal04').style.display='block'" class="w3-hover-shadow" />
+        </div>
+        <!-- second thumbnail image created below
+                we set 'modal02' in getElementById('modal02') -->
+        <div class="w3-col s4">
+          <img src="images/Autumn crafting with vibrant leaves.png" style="width: 100%; cursor: zoom-in"
+            onclick="document.getElementById('modal05').style.display='block'" class="w3-hover-shadow" />
+        </div>
+        <div class="w3-col s4">
+          <img src="images/Toddler playing with colorful block.png" style="width: 100%; cursor: zoom-in"
+            onclick="document.getElementById('modal06').style.display='block'" class="w3-hover-shadow" />
         </div>
       </div>
 
+      <!-- add the first modal, set id="modal01"-->
+      <!-- each lightbox content (modal) should have a unique modal id -->
+      <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+        <!-- add close button-->
+        <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+          style="cursor: pointer">&times;</span>
+        <!-- add modal background image -->
+        <div class="w3-modal-content w3-animate-zoom">
+          <h4 class="w3-center">Calming Activity</h4>
+          <img src="images/girl-coloring.webp" style="width: 100%" />
+        </div>
+      </div>
 
-<div class="cta-button">
-  See All Activities
-</div>
+      <!-- add the second modal, set id="modal02"-->
+      <!-- each lightbox content (modal) should have a unique modal id -->
+      <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+        <!-- add close button-->
+        <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+          style="cursor: pointer">&times;</span>
+        <!-- add modal background image -->
+        <div class="w3-modal-content w3-animate-zoom">
+          <h4 class="w3-center">Creative Activity</h4>
+          <img src="images/rock-painting.png" style="width: 100%" />
+        </div>
+      </div>
+
+      <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+        <!-- add close button-->
+        <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+          style="cursor: pointer">&times;</span>
+        <!-- add modal background image -->
+        <div class="w3-modal-content w3-animate-zoom">
+          <h4 class="w3-center">Bilingual Activity</h4>
+          <img src="images/girl reading.png" style="width: 100%" />
+        </div>
+      </div>
+      <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+        <!-- add close button-->
+        <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+          style="cursor: pointer">&times;</span>
+        <!-- add modal background image -->
+        <div class="w3-modal-content w3-animate-zoom">
+          <h4 class="w3-center">Calming Activity</h4>
+          <img src="images/Yoga session with mom and daughter.png" style="width: 100%" />
+        </div>
+      </div>
+      <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
+        <!-- add close button-->
+        <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+          style="cursor: pointer">&times;</span>
+        <!-- add modal background image -->
+        <div class="w3-modal-content w3-animate-zoom">
+          <h4 class="w3-center">Creative Activity</h4>
+          <img src="images/Autumn crafting with vibrant leaves.png" style="width: 100%" />
+        </div>
+      </div>
+      <div id="modal06" class="w3-modal" onclick="this.style.display='none'">
+        <!-- add close button-->
+        <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+          style="cursor: pointer">&times;</span>
+        <!-- add modal background image -->
+        <div class="w3-modal-content w3-animate-zoom">
+          <h4 class="w3-center">Bilingual Activity</h4>
+          <img src="images/Toddler playing with colorful block.png" style="width: 100%" />
+        </div>
+      </div>
+
+      <!-- follow the samples above to continue adding modal for each thumbnail image -->
+      <!-- each lightbox content (modal) should have a unique modal id -->
+      <!-- add code to add modal for each thumbnail image -->
+    </div>
+
+
+    <div class="cta-button">
+      See All Activities
+    </div>
+  </div>
 
   <!-- Footer -->
 
-<!-- Footer -->
+  <!-- Footer -->
 
-<footer class="footer">
+  <footer class="footer">
 
-  <!-- Organic SVG Wave -->
-  <div class="footer-wave">
-    <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
-      <path d="M0,60 
+    <!-- Organic SVG Wave -->
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+        <path d="M0,60 
                C180,120 360,20 540,60 
                C720,100 900,30 1080,70 
                C1260,110 1440,50 1440,50 
-               L1440,0 L0,0 Z" 
-            fill="#f4f2ed">
-      </path>
-    </svg>
-  </div>
-
-  <!-- Content -->
-  <div class="footer-content">
-    
-    <div class="footer-column">
-      <h4>Explore</h4>
-      <ul>
-        <li><a href="#">Activities</a></li>
-        <li><a href="#">Printables</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
+               L1440,0 L0,0 Z" fill="#f4f2ed">
+        </path>
+      </svg>
     </div>
 
-    <div class="footer-column">
-      <h4>Support</h4>
-      <ul>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms and conditions</a></li>
-        <li><a href="#">Disclaimer</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <!-- Content -->
+    <div class="footer-content">
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#">Activities</a></li>
+          <li><a href="#">Printables</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and conditions</a></li>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Stay Connected</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>hello@whimsyplay.com</p>
+      </div>
+
     </div>
 
-    <div class="footer-column">
-      <h4>Stay Connected</h4>
-    <div class="social-icons">
-  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-  <a href="#"><i class="fa-brands fa-youtube"></i></a>
-  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-</div>
-      <p>hello@whimsyplay.com</p>
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      ©2026 Whimsy Play. All rights reserved.
     </div>
 
-  </div>
-
-  <!-- Bottom -->
-  <div class="footer-bottom">
-    ©2026 Whimsy Play. All rights reserved.
-  </div>
-
-</footer>
+  </footer>
 </body>
+
 </html>
